@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_all_matches"
+        android:icon="@drawable/baseline_lists"
+        android:title="@string/all_matches" />
+
+    <item
+        android:id="@+id/item_saved"
+        android:icon="@drawable/baseline_save_24"
+        android:title="@string/saved_matches" />
+
+</menu>

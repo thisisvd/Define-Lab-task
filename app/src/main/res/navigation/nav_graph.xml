@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/defaultFragment">
+
+    <fragment
+        android:id="@+id/defaultFragment"
+        android:name="com.example.definelabtask.ui.fragments.DefaultFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_default" >
+        <action
+            android:id="@+id/action_defaultFragment_to_allMatchesFragment"
+            app:destination="@id/allMatchesFragment" />
+        <action
+            android:id="@+id/action_defaultFragment_to_savedMatchesFragment"
+            app:destination="@id/savedMatchesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allMatchesFragment"
+        android:name="com.example.definelabtask.ui.fragments.AllMatchesFragment"
+        android:label="@string/all_matches"
+        tools:layout="@layout/fragment_all_matches" />
+    <fragment
+        android:id="@+id/savedMatchesFragment"
+        android:name="com.example.definelabtask.ui.fragments.SavedMatchesFragment"
+        android:label="@string/saved_matches"
+        tools:layout="@layout/fragment_saved_matches" />
+</navigation>
